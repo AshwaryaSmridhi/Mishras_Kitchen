@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+ 
+ul {
+  list-style-type: none;
+  width: 500px;
+}
+ 
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ 
+li {
+  padding: 10px;
+  overflow: auto;
+}
+
+.menuList li{
+   
+    text-align: left;
+}
+ 
+.menuList li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+.hours_table{
+    padding-left: 42%;
+    font-size: 1.2em;
+}
+
+.feedback1{
+    padding-left: 60%;
+}
+
+.feedback2{
+    padding-right: 60%;
+}
+
+.feedback3{
+    padding-left: 40%;
+    padding-right: 30%;
+}
+
+.feedback4{
+    padding-right: 55%;
+}
+
+.feedback5{
+    padding-left: 60%;
+}

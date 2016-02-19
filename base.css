@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,700italic|Share:400,700italic);
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+	height:100%;
+	width:100%;
+  	color: #797e83;
+  font-size: 16px;
+	margin: 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 
+}
+
+.main-header, .nav{
+	display:flex;
+	flex-direction:column;
+	margin-bottom:0;
+	
+	}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+}
+
+.home_content{
+    text-align: left;
+    padding-left: 40%;
+    font-size: 2em;
+    
+    font-style: italic;
+}
+.home_head{
+    font-size: 3em;
+}
+
+a {
+  color: #656a6e;
+  text-decoration: none;
+  font-weight: 400; 
+}
+
+.nav {
+	width: 100%;
+	margin: auto;
+}
+
+.nav a{
+	display:block;
+	color:#E0C5C5;
+	font-size:1.125em;
+	font-weight:300;
+	text-align:center;
+	padding:.4em;
+	border-bottom: 1px solid #9D0A0D;
+}
+.nav a:hover{
+	color:#bbb;
+	border-bottom-color:#000000;
+	
+	}
+h1{
+	text-align:center;
+	color:#980B0E;
+font-family: 'Crimson Text', serif;
+font-style:italic;
+font-size:30px;
+color:#F9F6F6;
+}
+
+.wrap{
+	height: 1000px;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	background: #4D4B4Bl;
+	color: #fff;
+	text-align:center;
+	box-shadow: 0 .5em 1em #111;
+	
+	}
+header{
+	background:#3E474F;
+	box-shadow: 0 .5em 1em #111;
+	position:relative;
+	top:0;
+	left:0;
+	z-index: 900;
+	width: 100%;
+	}
+
+header label{
+	color: #788188;
+	cursor:pointer;
+	display: inline-block;
+	line-height: 4.25em;
+	font-size: .667em;
+	font-weight:bold;
+	padding: 0 1em;
+}
+
+header label:hover{
+	background: #322F2F;
+}
+
+
+	.slide{
+	height: 100%;
+	width: 100%;
+	position:absolute;
+	top:0;
+	left:100%;
+	z-index: 10;
+	padding: 8em 1em 0;
+	background-color: #120103;
+	background-position: 0% 0%;
+	background-size:cover;
+	transition: left 0s .75s;
+	}
+	
+	.slide-One{background-image:url(Home_Contrast3.jpg);}
+	.slide-two{background-image:url(Mishra_Contrast_Brightness.jpg);}
+	.slide-three{background-image:url(chicken1_faded.jpg);}
+	.slide-four{background-image:url(sky.JPG);}
+	
+.slide-Menu-1{background-image: url(entree_faded.jpg);}
+.slide-Menu-2{background-image: url(chicken1_faded.jpg);}
+
+.review{
+    color: #980B0E;
+    font-family: 'Crimson Text', serif;
+font-style:italic;
+}
+	
+	[id^="slide"]:checked + .slide {
+		left:0;
+		z-index: 100;
+		transition: left .65s ease-out;
+		}
+	.slide h1{
+		opacity: 0;Fade_mishra.jpg
+		transform: translateY(100%);
+		transition:transform .5s .5s, opacity .5s;
+		}
+		
+		[id^="slide"]:checked + .slide h1{
+			opacity: 1;
+			transform: translateY(0);
+			transition: all .5s .5s;
+				
+			}
+			
+			
+			@media (min-width:760px){
+				.main-header{
+					}
+				.nav{
+						margin-top: 3em;
+						flex-direction:row;
+						justify-content:space-between;
+						}
+				.nav a{
+							border-bottom-color:transparent;
+					}}
+							
+							
+		@media (min-width:1025px){
+						.main-header{
+							background-color:#7C0507;
+							margin-right:auto;
+							flex-direction:row;
+							height:25px;
+							}
+							.nav{
+								justify-content:flex-end;
+								margin-top:0;
+								background-color:#7C0507;
+								padding-right:7em;
+							
+}
+.nav a{
+	padding-right:2em}}
